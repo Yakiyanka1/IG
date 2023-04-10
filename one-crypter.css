@@ -1,0 +1,38 @@
+.container {
+display: grid;
+    text-align: center;
+    gap: 10px;
+grid-template-areas: 
+"header header"
+"section-1 section-2"
+"section-3 section-4"
+"footer footer";
+}
+.header {
+    grid-area: header;
+    
+}
+.section-1 {
+    grid-area: section-1;
+    align-content: center;
+}
+.section-2 {
+    grid-area: section-2;
+}
+.section-3 {
+    display: grid;
+    grid-area: section-3;
+    align-content: baseline;
+}
+.section-4 {
+    display: grid;
+    grid-area: section-4;
+    align-content: baseline;
+}
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    border: 1px solid black;
+    align-content: center;
+}
